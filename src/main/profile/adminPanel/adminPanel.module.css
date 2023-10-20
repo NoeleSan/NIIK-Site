@@ -1,0 +1,164 @@
+.wrapper {
+  min-height: 66vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.data {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-bottom: 0px;
+  word-break: break-all;
+}
+.func {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.buttons input {
+  height: 40px;
+  border-radius: 0px 50px 50px 0px;
+  font-size: 15px;
+}
+.button {
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0 0px 0px 15px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(20, 50, 121);
+  vertical-align: top;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #1a73e8;
+}
+
+.pagination {
+  padding: 0px 0px 5px;
+  margin-bottom: 0px;
+  width: 100%;
+  background-color: rgb(49, 16, 183);
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.page_item {
+  border-radius: 10px;
+  width: 60px;
+  height: 20px;
+  margin-left: 10px;
+  border: 1px solid white;
+  background-color: #fff;
+  cursor: pointer;
+}
+.page_item a {
+  width: 60px;
+  margin: 0px;
+  text-align: center;
+}
+.pageLink {
+  display: flex;
+  justify-content: right;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+.active {
+  background-color: gold;
+}
+
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 25px;
+  margin: 0 0px 15px 0;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 50px 0px 0px 50px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #444;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  transition: box-shadow 0.2s;
+}
+.btn:focus-visible {
+  border: 1px solid #4c51f9;
+  outline: none;
+}
+.btn:hover {
+  background-color: rgb(185, 185, 223);
+  transition: all 0.2s;
+  box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.btn:active {
+  background-color: #808080;
+}
+.btn:disabled {
+  background-color: #eee;
+  border-color: #eee;
+  color: #444;
+  cursor: not-allowed;
+}
+.formAddMain {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(49, 16, 183);
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.formAdd {
+  height: 30px;
+  margin: 10px;
+  max-width: 150px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.formPut {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(49, 16, 183);
+}
+.formPut input {
+  margin: 10px 0px;
+  height: 30px;
+  min-width: 100px;
+}
+.formPut select {
+  margin: 10px 0px;
+  height: 30px;
+  min-width: 100px;
+}

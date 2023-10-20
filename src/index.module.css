@@ -1,0 +1,11 @@
+@import-normalize;
+
+body {
+  margin: 0px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}

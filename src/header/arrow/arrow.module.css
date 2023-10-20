@@ -1,0 +1,23 @@
+.blockArrow {
+  margin-left: 20px;
+  display: block;
+}
+
+.arrowImg {
+  width: 40px;
+  height: 40px;
+}
+.blockArrow:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .blockArrow {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .blockArrow {
+    display: none;
+  }
+}

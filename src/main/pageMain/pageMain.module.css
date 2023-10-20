@@ -1,0 +1,83 @@
+.wrapper {
+  max-width: 1150px;
+  min-height: 66vh;
+}
+.slider {
+  width: 85%;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  height: 400px;
+}
+
+.info {
+  position: absolute;
+  left: 12%;
+  top: 60%;
+}
+.why {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.why a {
+  max-width: 345px;
+  margin: 10px;
+}
+.why a img {
+  float: left;
+}
+.why a p {
+  margin: 0px;
+  padding: 0px;
+  text-indent: 0px;
+  text-align: left;
+  text-decoration: underline;
+}
+.build {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+.build img {
+  max-width: 500px;
+}
+@media screen and (max-width: 1024px) {
+  .info img {
+    width: 150px;
+  }
+  .info {
+    position: absolute;
+    left: 8%;
+    top: 60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .info img {
+    width: 100px;
+  }
+  .info {
+    position: absolute;
+    left: 8%;
+    top: 70%;
+  }
+  .build img {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .info img {
+    width: 100px;
+  }
+  .info {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+  }
+  .build img {
+    max-width: 290px;
+  }
+}

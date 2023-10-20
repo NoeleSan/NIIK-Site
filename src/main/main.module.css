@@ -1,0 +1,27 @@
+.wrapper {
+  max-width: 1150px;
+  min-height: 66vh;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+.dfsfs {
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  left: 1500px;
+  position: absolute;
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    background-color: rgb(7, 18, 44);
+  }
+}
+
+p {
+  text-indent: 1.5em;
+}

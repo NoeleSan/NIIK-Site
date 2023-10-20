@@ -1,0 +1,135 @@
+.wrapper {
+  max-width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 66vh;
+}
+.auth {
+  width: 100%;
+  min-height: 80vh;
+  background-color: rgb(7, 18, 44);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.errors {
+  margin: 30px 20px 0px 0px;
+  padding: 0px;
+  text-align: center;
+}
+.text_field__label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.text_field__input {
+  display: block;
+
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.text_field__input::placeholder {
+  color: #212529;
+  opacity: 0.4;
+}
+.text_field__input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+.block {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.text_field__icon {
+  position: relative;
+}
+.text_field__icon::before {
+  content: "";
+  color: #bdbdbd;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0.625rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.text_field__icon .text_field__input {
+  padding-left: 2rem;
+}
+/* email значок */
+.text_field__icon_email::before {
+  content: "✉";
+}
+.text_field__icon_password::before {
+  content: "🔒";
+}
+.text_field__icon_tel::before {
+  content: "☎";
+}
+
+.auth img {
+  width: 10%;
+  margin-top: 20px;
+}
+.join {
+  margin-top: 20px;
+  max-width: 180px;
+  padding: 0px 5px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid white;
+}
+.join:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  animation-name: joinBtn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.hideButton {
+  display: none;
+}
+
+@keyframes joinBtn {
+  0% {
+    border: 1px solid white;
+  }
+  51% {
+    border: 1px solid gold;
+  }
+  100% {
+    border: 1px solid white;
+  }
+}

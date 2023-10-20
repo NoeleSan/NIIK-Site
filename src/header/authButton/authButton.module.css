@@ -1,0 +1,118 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.authorization {
+  display: table;
+  height: 50%;
+}
+.auth_text {
+  padding: 0px 10px;
+  display: table-cell;
+  vertical-align: middle;
+  margin-right: 20px;
+  height: 100%;
+  text-align: center;
+  border-radius: 10px 0 0 10px;
+}
+.auth_text:hover {
+  cursor: pointer;
+  background-color: #142c6c;
+}
+.reg {
+  padding: 0px 10px;
+  display: table-cell;
+  vertical-align: middle;
+  margin-right: 20px;
+  height: 100%;
+  text-align: center;
+  border-radius: 0 10px 10px 0px;
+  background-color: rgb(67, 67, 67);
+}
+
+.reg:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.blockArrow {
+  display: none;
+}
+
+.activeBlockArrow {
+  display: block;
+  margin-left: 50px;
+}
+.arrowImg {
+  width: 40px;
+  height: 40px;
+}
+.activeBlockArrow:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .activeBlockArrow {
+    margin-left: 20px;
+  }
+  .wrap {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .authorization {
+    height: 50%;
+    line-height: 50px;
+  }
+  .reg {
+    margin: 5px 0px;
+    font-size: 13px;
+    padding: 5px;
+  }
+  .auth_text {
+    margin: 5px 0px;
+    font-size: 13px;
+    padding: 5px;
+  }
+}
+@media (max-width: 425px) {
+  .authorization {
+    height: 50%;
+    line-height: 37px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .auth_text {
+    border-radius: 10px;
+    max-height: 40px;
+    padding: 0px 3px;
+  }
+  .reg {
+    border-radius: 10px;
+    max-height: 40px;
+    padding: 0px 3px;
+  }
+  .activeBlockArrow {
+    display: none;
+  }
+}
+@media (max-width: 390px) {
+  .authorization {
+    flex-direction: row;
+  }
+  .reg {
+    border-radius: 0 10px 10px 0px;
+    padding: 0px 10px;
+  }
+  .auth_text {
+    border-radius: 10px 0 0 10px;
+    padding: 0px 10px;
+  }
+} ;

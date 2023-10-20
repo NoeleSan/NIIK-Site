@@ -1,0 +1,121 @@
+.wrapper {
+  max-width: 1150px;
+  min-height: 66vh;
+}
+
+p {
+  font-size: 25px;
+  text-align: justify;
+  
+}
+.PostOb {
+  font-size: 30px;
+  margin-left: 30px;
+}
+li {
+  font-size: 25px;
+}
+
+.projectBar {
+  height: 50vh;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+.list li {
+  margin: 5px 40px;
+  transition: 0.5s all;
+  font-size: 25px;
+}
+
+.list li:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: gold;
+}
+.head {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+}
+.imageBar {
+  width: 35%;
+  height: 35%;
+  margin-left: 20px;
+  float: right;
+}
+.imgCian {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgCian img {
+  width: 40%;
+}
+
+li {
+  padding: 5px 0px;
+}
+@media screen and (max-width: 1024px) {
+  .head {
+    font-size: 35px;
+  }
+  p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px 20px;
+  }
+  li {
+    font-size: 20px;
+  }
+  .list {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .info {
+    flex-direction: column;
+  }
+  .info__metrology {
+    flex-direction: column;
+  }
+  p {
+    font-size: 15px;
+
+    padding: 5px;
+    margin: 0px 20px;
+  }
+  li {
+    font-size: 15px;
+  }
+  .imageBar {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0px 0px 0px 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  h3 {
+    margin-left: 0px;
+    text-align: center;
+  }
+  p {
+    text-align: left;
+  }
+  .PostOb {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .imageBar {
+    float: none;
+    width: 100%;
+    padding: 0px;
+  }
+}
